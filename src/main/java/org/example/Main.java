@@ -54,7 +54,7 @@ public class Main {
         for (int i = digitCount - 1; i >= 0; i--) {
             int digit = tempNumber / (int) Math.pow(10, i);
             tempNumber %= (int) Math.pow(10, i);
-            result.append(words[digit]);
+            StringBuilder append = result.append(words[digit]);
             if (i != 0) {
                 result.append(" ");
             }
